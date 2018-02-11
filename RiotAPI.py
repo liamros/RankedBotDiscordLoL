@@ -28,8 +28,17 @@ class RiotAPI(object):
             )
         return self._request(api_url)
 
+
     def rank(self, id) :
         api_url = Consts.URL['rank'].format(
+            version = Consts.API_VERSION['league'],
+            summonerid = id
+            )
+        return self._request(api_url)
+
+
+    def champion_master(self, id) :
+        api_url = Consts.URL['champion_mastery'].format(
             version = Consts.API_VERSION['league'],
             summonerid = id
             )
