@@ -43,3 +43,20 @@ class RiotAPI(object):
             summonerid = id
             )
         return self._request(api_url)
+
+
+    def match(self, accId) :
+        api_url = Consts.URL['match'].format(
+            version = Consts.API_VERSION['league'],
+            accountId = accId
+            #queue = 420
+            )
+        return self._request(api_url)
+
+
+    def match_info(self, matId) :
+        api_url = Consts.URL['matchdetails'].format(
+            version = Consts.API_VERSION['league'],
+            matchid = matId
+            )
+        return self._request(api_url)

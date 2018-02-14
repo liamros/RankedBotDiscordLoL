@@ -1,5 +1,5 @@
-BOT_TOKEN = ''
-API_KEY = ''
+BOT_TOKEN = 'YOUR DISCORD BOT TOKEN'
+API_KEY = 'YOUR RIOT API KEY'
 CHAMPS = {
     1 : 'Annie',
     2 : 'Olaf',
